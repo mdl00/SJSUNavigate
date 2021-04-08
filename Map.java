@@ -4,15 +4,14 @@ import java.util.Scanner;
 
 public class Map {
     private HashMap<String, Node> nodes;
-    private String fileName;
 
     // Construct a Map using a file.
     public Map(String fileName) {
         try {
             File input = new File(fileName);
-            this.fileName = fileName;
             nodes = new HashMap<>();
             Scanner scan = new Scanner(input);
+            
             while (scan.hasNextLine()) {
                 String line = scan.nextLine();
                 String[] info = line.split("; ");
@@ -32,12 +31,11 @@ public class Map {
                         double distance = Double.parseDouble(info[3]);
                         Node.addNeighbor(node1, node2, distance);
                     }
-
                 }
             }
             scan.close();
         } catch (Exception exception) {
-            System.out.println(exception.getMessage());
+            exception.printStackTrace();
         }
     }
 
@@ -47,23 +45,6 @@ public class Map {
 
     public static void main(String[] args) {
         String fileName = args[0];
-        Map map = new Map(fileName);
-        Path path = Path.findPath(fileName, "6-1", "4-8");
-        System.out.println(path);
-        System.out.println(path.findTotalDistance());
-
-        /*
-        0 1 2 3 4 5 6 7 8    <- x
-        1 A - B ----L
-        2 \     \       F
-        3  \      C --/
-        4   D --/   \
-        5   |\    G - E
-        6   | H -/     \I
-        7   J   \-- K
-        8     \-M -/
-
-        ^y
-        */
+        Path.findShortestPathByName(fileName, "24-103", "106-25");
     }
 }
