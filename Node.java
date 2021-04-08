@@ -1,3 +1,5 @@
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.NoSuchElementException;
 
@@ -11,12 +13,7 @@ public class Node {
 
     // Construct a new Node with unknown or unspecified neighbors.
     public Node(String name, int x, int y) {
-        this.name = name;
-        this.x = x;
-        this.y = y;
-        neighbors = new ArrayList<>(1);
-        distances = new ArrayList<>(1);
-        visited = false;
+        this(name, x, y, new ArrayList<>(1), new ArrayList<>(1));
     }
 
     // Construct a new Node with known neighbors and distances to each neighbors.
@@ -92,9 +89,15 @@ public class Node {
 
     // Find the Euclidean distance between 2 Nodes.
     public double findEuclideanDistance(Node destination) {
-        int xDelta = Math.abs(this.x - destination.x);
-        int yDelta = Math.abs(this.y - destination.y);
-        return Math.sqrt(Math.pow(xDelta, 2) + Math.pow(yDelta, 2));
+        int xChange = Math.abs(this.x - destination.x);
+        int yChange = Math.abs(this.y - destination.y);
+        return Math.sqrt(Math.pow(xChange, 2) + Math.pow(yChange, 2));
+    }
+
+    public static double roundToTwoDecimalPlaces(double number) {
+        DecimalFormat df = new DecimalFormat("#.##");
+        df.setRoundingMode(RoundingMode.HALF_UP);
+        return Double.parseDouble(df.format(number));
     }
 
     public String toString() {
