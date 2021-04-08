@@ -8,18 +8,7 @@ import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 
-public class SJSUNav extends Canvas {
-	
-	public enum Direction{LEFT, RIGHT, UP, DOWN};
-	
-	private static final String GREEN_PATH = "/Users/matthew/Downloads/greenblock.png";
-	private static final String TGREEN_PATH = "/Users/matthew/Downloads/transparentgreenblock.png";
-	private static final String RED_PATH = "/Users/matthew/Downloads/redblock.png";
-	private static final String TRED_PATH = "/Users/matthew/Downloads/transparentredblock.png";
-	private static final String T_PATH = "/Users/matthew/Downloads/transparentblock.png";
-	
-	public static boolean continuing = true;
-	
+class MapImage extends Canvas {
 	public void paint(Graphics g) {  
         setBackground(Color.WHITE);   
 		
@@ -38,6 +27,23 @@ public class SJSUNav extends Canvas {
         	}
         }
     }
+}
+
+public class SJSUNav {
+	
+	public enum Direction{LEFT, RIGHT, UP, DOWN};
+	
+	private static final String GREEN_PATH = "/Users/matthew/Downloads/greenblock.png";
+	private static final String TGREEN_PATH = "/Users/matthew/Downloads/transparentgreenblock.png";
+	private static final String RED_PATH = "/Users/matthew/Downloads/redblock.png";
+	private static final String TRED_PATH = "/Users/matthew/Downloads/transparentredblock.png";
+	private static final String TBLUE_PATH = "/Users/matthew/Downloads/transparentblueblock.png";
+	private static final String T_PATH = "/Users/matthew/Downloads/transparentblock.png";
+	
+	static int startX = -1;
+	static int endX = -1;
+	static int startY = -1;
+	static int endY = -1;
 	
 	public static void main(String args[]) {
 		String[][] locs = loadMap();
@@ -52,61 +58,95 @@ public class SJSUNav extends Canvas {
 			System.out.println();
 		}
 		
-		ImageIcon greenicon = null, tgreenicon = null, redicon = null, tredicon = null, ticon = null;
-		
 		JFrame mainWindow = new JFrame();
 		
 		try {
 			BufferedImage img = ImageIO.read(new File(GREEN_PATH));
-			greenicon = new ImageIcon(img);
+			final ImageIcon greenicon = new ImageIcon(img);
 			img = ImageIO.read(new File(TGREEN_PATH));
-			tgreenicon = new ImageIcon(img);
+			final ImageIcon tgreenicon = new ImageIcon(img);
 			img = ImageIO.read(new File(RED_PATH));
-			redicon = new ImageIcon(img);
+			final ImageIcon redicon = new ImageIcon(img);
 			img = ImageIO.read(new File(TRED_PATH));
-			tredicon = new ImageIcon(img);
+			final ImageIcon tredicon = new ImageIcon(img);
 			img = ImageIO.read(new File(T_PATH));
-			ticon = new ImageIcon(img);
-			SJSUNav sn = new SJSUNav();
+			final ImageIcon ticon = new ImageIcon(img);
+			img = ImageIO.read(new File(TBLUE_PATH));
+			final ImageIcon tblueicon = new ImageIcon(img);
+			MapImage mi = new MapImage();
 			
-			JButton button = new JButton("Close");
-			button.setBounds(350, 550, 100, 20);
-			button.addMouseListener(new MouseAdapter() {
-
-                @Override
-                public void mouseClicked(MouseEvent e) {
-                	continuing = false;
-                }
-            });
-			mainWindow.add(button);
-			mainWindow.add(sn);
+			JButton[][] gridButtons = new JButton[36][31];
+			for (int i = 4; i < 40; i++) {
+	        	for (int j = 11; j < 42; j++) {
+	        		JButton button = new JButton(ticon);
+	        		button.setBounds(i*16, j*16, 16, 16);
+	        		button.setVisible(false);
+	        		gridButtons[i-4][j-11] = button;
+	        	}
+	        }
 			
+			for (int i = 0; i < 36; i++) {
+				for (int j = 0; j < 31; j++) {
+					mainWindow.add(gridButtons[i][j]);
+				}
+			}
+						
+			mi.addMouseListener(new MouseAdapter() {
+				
+	            @Override
+	            public void mouseClicked(MouseEvent e) {
+	            	PointerInfo a;
+	    	    	Point b;
+	    			int x, y;
+	            	a = MouseInfo.getPointerInfo();
+					b = a.getLocation();
+		        	x = (int) b.getX();
+		        	y = (int) b.getY();
+		        	x = x/16 - 4;
+		        	y = y/16 - 14;
+		        	System.out.println(x + ", " + y);
+		        	if (x >= 0 && x < 36 && y >= 0 && y < 31) {
+		        		if (startX == -1 || endX != -1) {
+		        			if (endX != -1) {
+		        				for (int i = 0; i < 36; i++) {
+		        					for (int j = 0; j < 31; j++) {
+		        						gridButtons[i][j].setVisible(false);
+		        					}
+		        				}
+		        				endX = -1;
+		        				endY = -1;
+		        			}
+		        			gridButtons[x][y].setIcon(greenicon);
+		        			gridButtons[x][y].setVisible(true);
+		        			startX = x;
+			        		startY = y;
+			        		
+		        		} else {
+		        			gridButtons[x][y].setIcon(redicon);
+		        			gridButtons[x][y].setVisible(true);
+		        			endX = x;
+			        		endY = y;
+			        		try{Thread.sleep(1000);}catch(Exception err){}    
+			        		for (int i = startX + 1; i <= endX; i++) {
+			        			gridButtons[i][startY].setIcon(tblueicon);
+			        			gridButtons[i][startY].setVisible(true);
+			        		}
+			        		for (int i = startY + 1; i < endY; i++) {
+			        			gridButtons[endX][i].setIcon(tblueicon);
+			        			gridButtons[endX][i].setVisible(true);
+			        		}
+			        	}
+		        	}
+	            }
+	        });
+		
+			mainWindow.add(mi);		
 			mainWindow.setSize(800,800);  
 		    mainWindow.setVisible(true); 
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
-		PointerInfo a;
-    	Point b;
-		int x, y;
-		
-		JButton jb = new JButton(tgreenicon);
-		jb.setBounds(0,0,0,0);
-		mainWindow.add(jb);
-		
-		while(continuing) {
-			a = MouseInfo.getPointerInfo();
-			b = a.getLocation();
-        	x = (int) b.getX();
-        	y = (int) b.getY();
-        	x = x/16;
-        	y = y/16 - 3;
-        	
-    		jb.setBounds(x*16, y*16, 16, 16);
-    		jb.repaint();
-		}
-		
+
 	}
 	
 	public static String[][] loadMap() {
