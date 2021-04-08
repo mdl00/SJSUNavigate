@@ -10,7 +10,7 @@ public class SJSUNav {
 		
 		for (int i = 0; i < 20; i++) {
 			System.out.print((i+1) + ": ");
-			for (int j = 0; j < 20; j++) {
+			for (int j = 0; j < 19; j++) {
 				System.out.print(locs[i][j] + " ");
 			}
 			System.out.println();
