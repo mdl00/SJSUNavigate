@@ -104,17 +104,13 @@ public class Path {
         Path path2 = findPath(fileName, node2Name, node1Name);
         double path1Distance = Node.roundToTwoDecimalPlaces(path1.findTotalDistance());
         double path2Distance = Node.roundToTwoDecimalPlaces(path2.findTotalDistance());
-        System.out.println(path1 + "; distance: " + path1Distance);
-        System.out.println(path2 + "; distance: " + path2Distance);
-        Path shortest = path2Distance < path1Distance ? path2.getReversedPath() : path1;
-        System.out.println("Shortest: " + shortest + "; distance: " + Node.roundToTwoDecimalPlaces(shortest.findTotalDistance()) + "\n");
-        return shortest;
+        return path2Distance < path1Distance ? path2.getReversedPath() : path1;
     }
 
     private Path getReversedPath() {
         LinkedList<Node> reversed = new LinkedList<>();
-        for (int i = path.size() - 1; i >= 0; i--)
-            reversed.add(path.get(i));
+        for (Node node : path)
+            reversed.addFirst(node);
         return new Path(reversed);
     }
 
@@ -123,14 +119,20 @@ public class Path {
     }
 
     public static void main(String[] args) {
+        // For the input file, use MapInfo.txt
         String fileName = args[0];
+        Map.initialize("BuildingNames.txt");
         Scanner in = new Scanner(System.in);
         while (in.hasNextLine()) {
             String line = in.nextLine();
-            String[] info = line.split(" ");
+            String[] info = line.split(" to ");
             String node1 = info[0];
             String node2 = info[1];
-            findShortestPathByName(fileName, node1, node2);
+            node1 = Map.getFullName(node1) == null ? node1 : Map.getFullName(node1);
+            node2 = Map.getFullName(node2) == null ? node2 : Map.getFullName(node2);
+            Path shortest = findShortestPathByName(fileName, node1, node2);
+            System.out.println("From " + node1 + " to " + node2);
+            System.out.println(shortest + "; distance: " + Node.roundToTwoDecimalPlaces(shortest.findTotalDistance()) + "\n");
         }
     }
 }
