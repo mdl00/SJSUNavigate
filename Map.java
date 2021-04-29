@@ -40,7 +40,7 @@ public class Map {
         }
     }
 
-    // Initialize abbrevName and fullName.
+    // Initialize abbrevName, fullName, and capitalizedName.
     public static void initialize(String fileName) {
         abbrevName = new HashMap<>();
         fullName = new HashMap<>();
