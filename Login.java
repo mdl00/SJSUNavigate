@@ -58,11 +58,11 @@ public class Login {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("Login");
+		JLabel lblNewLabel = new JLabel("SJSUNavigate Login");
 		lblNewLabel.setForeground(Color.BLACK);
 		lblNewLabel.setBackground(Color.WHITE);
 		lblNewLabel.setFont(new Font("Verdana", Font.PLAIN, 18));
-		lblNewLabel.setBounds(288, 28, 63, 34);
+		lblNewLabel.setBounds(222, 32, 206, 34);
 		frame.getContentPane().add(lblNewLabel);
 		
 		txtUsername = new JTextField();
