@@ -4,8 +4,9 @@ import java.util.Scanner;
 
 public class Map {
     private HashMap<String, Node> nodes;
-    private static HashMap<String, String> abbrevName;
-    private static HashMap<String, String> fullName;
+    private static HashMap<String, String> abbrevName; // Ex. Dr. Martin Luther King, Jr. Library -> KING
+    private static HashMap<String, String> fullName; // Ex. KING -> Dr. Martin Luther King, Jr. Library
+    private static HashMap<String, String> capitalizedName; // Ex. engineering building -> Engineering Building
 
     // Construct a Map using a file.
     public Map(String fileName) {
@@ -43,6 +44,7 @@ public class Map {
     public static void initialize(String fileName) {
         abbrevName = new HashMap<>();
         fullName = new HashMap<>();
+        capitalizedName = new HashMap<>();
         try {
             File input = new File(fileName);
             Scanner scan = new Scanner(input);
@@ -51,8 +53,10 @@ public class Map {
                 String[] nameAndAbbrev = line.split("; ");
                 String full = nameAndAbbrev[0];
                 String abbrev = nameAndAbbrev[1];
+                String allLowerCase = full.toLowerCase();
                 abbrevName.put(full, abbrev);
                 fullName.put(abbrev, full);
+                capitalizedName.put(allLowerCase, full);
             }
             scan.close();
         } catch (Exception exp) {
@@ -70,6 +74,10 @@ public class Map {
 
     public static String getFullName(String abbrevName) {
         return fullName.get(abbrevName);
+    }
+
+    public static String getCapitalizedName(String lowerCaseName) {
+        return capitalizedName.get(lowerCaseName);
     }
 
     public static void main(String[] args) {
