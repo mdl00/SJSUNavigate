@@ -121,6 +121,10 @@ public class Path {
         if (Map.getCapitalizedName(lowerCase) != null) return Map.getCapitalizedName(lowerCase);
         return name;
     }
+    
+    public LinkedList<Node> getPath() {
+        return path;
+    }
 
     public String toString() {
         return path.toString();
