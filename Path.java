@@ -114,6 +114,14 @@ public class Path {
         return new Path(reversed);
     }
 
+    // Check if the input is an abbreviation, correctly spelt, or incorrectly spelt
+    private static String getCorrectName(String name) {
+        if (Map.getFullName(name) != null) return Map.getFullName(name);
+        String lowerCase = name.toLowerCase();
+        if (Map.getCapitalizedName(lowerCase) != null) return Map.getCapitalizedName(lowerCase);
+        return name;
+    }
+
     public String toString() {
         return path.toString();
     }
@@ -126,12 +134,10 @@ public class Path {
         while (in.hasNextLine()) {
             String line = in.nextLine();
             String[] info = line.split(" to ");
-            String node1 = info[0];
-            String node2 = info[1];
-            node1 = Map.getFullName(node1) == null ? node1 : Map.getFullName(node1);
-            node2 = Map.getFullName(node2) == null ? node2 : Map.getFullName(node2);
+            String node1 = getCorrectName(info[0]);
+            String node2 = getCorrectName(info[1]);
             Path shortest = findShortestPathByName(fileName, node1, node2);
-            System.out.println("From " + node1 + " to " + node2);
+            System.out.println("From [" + node1 + "] to [" + node2 + "]");
             System.out.println(shortest + "; distance: " + Node.roundToTwoDecimalPlaces(shortest.findTotalDistance()) + "\n");
         }
     }
