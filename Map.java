@@ -59,8 +59,8 @@ public class Map {
                 capitalizedName.put(allLowerCase, full);
             }
             scan.close();
-        } catch (Exception exp) {
-            exp.printStackTrace();
+        } catch (Exception exception) {
+            exception.printStackTrace();
         }
     }
 
