@@ -1,0 +1,692 @@
+New; 5-3; 5; 3
+New; 5-20; 5; 20
+New; 5-42; 5; 42
+New; 5-46; 5; 46
+New; 5-53; 5; 53
+New; 5-68; 5; 68
+New; 5-72; 5; 72
+New; 5-81; 5; 81
+New; 5-96; 5; 96
+New; 5-124; 5; 124
+New; 9-68; 9; 68
+New; 9-72; 9; 72
+New; 9-81; 9; 81
+New; 9-96; 9; 96
+New; 9-124; 9; 124
+New; 12-42; 12; 42
+New; 13-3; 13; 3
+New; 15-46; 15; 46
+New; 15-68; 15; 68
+New; 15-96; 15; 96
+New; 20-101; 20; 101
+New; 21-68; 21; 68
+New; 21-82; 21; 82
+New; 24-69; 24; 69
+New; 23-3; 23; 3
+New; 23-25; 23; 25
+New; 23-52; 23; 52
+New; 23-60; 23; 60
+New; 24-46; 24; 46
+New; 24-57; 24; 57
+New; 24-68; 24; 68
+New; 24-75; 24; 75
+New; 24-82; 24; 82
+New; 24-86; 24; 86
+New; 24-96; 24; 96
+New; 24-104; 24; 104
+New; 24-124; 24; 124
+New; 25-124; 25; 124
+New; 29-124; 29; 124
+New; 31-68; 31; 68
+New; 32-3; 32; 3
+New; 32-10; 32; 10
+New; 32-25; 32; 25
+New; 32-46; 32; 46
+New; 32-80; 32; 80
+New; 32-86; 32; 86
+New; 32-91; 32; 91
+New; 32-104; 32; 104
+New; 32-109; 32; 109
+New; 34-118; 34; 118
+New; 34-124; 34; 124
+New; 35-3; 35; 3
+New; 35-68; 35; 68
+New; 35-72; 35; 72
+New; 35-75; 35; 75
+New; 35-80; 35; 80
+New; 35-104; 35; 104
+New; 35-110; 35; 110
+New; 38-42; 38; 42
+New; 38-26; 38; 26
+New; 38-80; 38; 80
+New; 38-91; 38; 91
+New; 38-102; 38; 102
+New; 38-104; 38; 104
+New; 40-42; 40; 42
+New; 40-46; 40; 46
+New; 40-104; 40; 104
+New; 40-110; 40; 110
+New; 41-3; 41; 3
+New; 41-25; 41; 25
+New; 43-68; 43; 68
+New; 43-77; 43; 77
+New; 43-80; 43; 80
+New; 43-91; 43; 91
+New; 44-42; 44; 42
+New; 44-46; 44; 46
+New; 46-25; 46; 25
+New; 46-31; 46; 31
+New; 46-38; 46; 38
+New; 46-91; 46; 91
+New; 46-42; 46; 42
+New; 47-59; 47; 59
+New; 47-77; 47; 77
+New; 48-29; 48; 29
+New; 48-97; 48; 97
+New; 48-102; 48; 102
+New; 48-104; 48; 104
+New; 48-110; 48; 110
+New; 48-116; 48; 116
+New; 50-118; 50; 118
+New; 50-124; 50; 124
+New; 51-68; 51; 68
+New; 51-77; 51; 77
+New; 52-42; 52; 42
+New; 52-46; 52; 46
+New; 52-57; 52; 57
+New; 53-61; 53; 61
+New; 53-110; 53; 110
+New; 53-112; 53; 112
+New; 54-80; 54; 80
+New; 54-86; 54; 86
+New; 54-91; 54; 91
+New; 55-75; 55; 75
+New; 56-95; 56; 95
+New; 57-89; 57; 89
+New; 58-64; 58; 64
+New; 59-3; 59; 3
+New; 59-25; 59; 25
+New; 60-54; 60; 54
+New; 62-25; 62; 25
+New; 62-42; 62; 42
+New; 62-46; 62; 46
+New; 62-112; 62; 112
+New; 64-42; 64; 42
+New; 64-44; 64; 44
+New; 64-50; 64; 50
+New; 64-60; 64; 60
+New; 64-64; 64; 64
+New; 64-68; 64; 68
+New; 64-77; 64; 77
+New; 64-80; 64; 80
+New; 64-83; 64; 83
+New; 64-86; 64; 86
+New; 64-94; 64; 94
+New; 64-124; 64; 124
+New; 65-3; 65; 3
+New; 65-15; 65; 15
+New; 65-20; 65; 20
+New; 65-26; 65; 26
+New; 65-29; 65; 29
+New; 65-35; 65; 35
+New; 66-46; 66; 46
+New; 66-101; 66; 101
+New; 66-118; 66; 118
+New; 68-68; 68; 68
+New; 68-77; 68; 77
+New; 68-78; 68; 78
+New; 68-80; 68; 80
+New; 69-39; 69; 39
+New; 69-45; 69; 45
+New; 69-52; 69; 52
+New; 71-10; 71; 10
+New; 72-42; 72; 42
+New; 72-78; 72; 78
+New; 72-83; 72; 83
+New; 72-94; 72; 94
+New; 76-60; 76; 60
+New; 76-62; 76; 62
+New; 76-83; 76; 83
+New; 77-16; 77; 16
+New; 77-45; 77; 45
+New; 77-79; 77; 79
+New; 80-42; 80; 42
+New; 82-79; 82; 79
+New; 82-83; 82; 83
+New; 82-94; 82; 94
+New; 82-124; 82; 124
+New; 84-3; 84; 3
+New; 84-10; 84; 10
+New; 84-20; 84; 20
+New; 86-62; 86; 62
+New; 86-79; 86; 79
+New; 86-81; 86; 81
+New; 87-42; 87; 42
+New; 88-94; 88; 94
+New; 88-104; 88; 104
+New; 88-124; 88; 124
+New; 89-62; 89; 62
+New; 89-79; 89; 79
+New; 90-45; 90; 45
+New; 93-79; 93; 79
+New; 95-3; 95; 3
+New; 95-20; 95; 20
+New; 95-42; 95; 42
+New; 96-62; 96; 62
+New; 96-69; 96; 69
+New; 97-45; 97; 45
+New; 98-97; 98; 97
+New; 99-79; 99; 79
+New; 102-42; 102; 42
+New; 102-45; 102; 45
+New; 102-55; 102; 55
+New; 102-61; 102; 61
+New; 102-67; 102; 67
+New; 102-79; 102; 79
+New; 102-94; 102; 94
+New; 102-103; 102; 103
+New; 102-115; 102; 115
+New; 102-118; 102; 118
+New; 102-124; 102; 124
+New; 103-3; 103; 3
+New; 103-12; 103; 12
+New; 103-20; 103; 20
+New; 103-26; 103; 26
+New; 103-84; 103; 84
+New; 106-3; 106; 3
+New; 106-20; 106; 20
+New; 106-26; 106; 26
+New; 106-42; 106; 42
+New; 106-45; 106; 45
+New; 106-48; 106; 48
+New; 106-55; 106; 55
+New; 106-61; 106; 61
+New; 106-67; 106; 67
+New; 106-75; 106; 75
+New; 106-79; 106; 79
+New; 106-97; 106; 97
+New; 106-103; 106; 103
+New; 106-110; 106; 110
+New; 106-115; 106; 115
+New; 106-123; 106; 123
+New; 108-65; 108; 65
+New; 109-45; 109; 45
+New; 111-3; 111; 3
+New; 111-11; 111; 11
+New; 111-36; 111; 36
+New; 112-22; 112; 22
+New; 112-78; 112; 78
+New; 114-42; 114; 42
+New; 116-3; 116; 3
+New; 116-15; 116; 15
+New; 116-32; 116; 32
+New; West Parking Garage; 10; 20
+New; Duncan Hall; 23; 15
+New; South Parking Garage; 48; 15
+New; University Police Department; 62; 15
+New; MacQuarrie Hall; 40; 33
+New; Sweeney Hall; 57; 33
+New; Yoshihiro Uchida Hall; 15; 55
+New; Spartan Complex Central; 34; 54
+New; Spartan Complex East; 47; 54
+New; Spartan Memorial; 25; 64
+New; Faculty Offices; 39; 65
+New; Student Wellness Center; 57; 54
+New; Washington Square Hall; 15; 72
+New; Science Building; 12; 89
+New; Tower Hall; 35; 88
+New; Morris Dailey Auditorium; 38; 86
+New; Dwight Bentel Hall; 43; 74
+New; Central Classroom Building; 58; 77
+New; Dr. Martin Luther King, Jr. Library; 15; 112
+New; Hugh Gillis Hall; 28; 116
+New; University Theatre; 26; 120
+New; Dudley Moorhead Hall; 40; 118
+New; Instructional Resource Center; 43; 111
+New; Career Center; 58; 118
+New; Administration; 58; 111
+New; Computer Center; 43; 102
+New; Clark Hall; 60; 101
+New; Washburn Hall; 73; 12
+New; Dining Commons; 91; 10
+New; Joe West Hall; 100; 12
+New; Spartan Recreation and Aquatic Center; 76; 34
+New; Campus Village 2; 100; 33
+New; Campus Village A; 108; 10
+New; Campus Village B; 115; 22
+New; Campus Village C; 108; 36
+New; Event Center; 80; 52
+New; Health Building; 97; 55
+New; Cooling Plant; 112; 54
+New; Music Building; 76; 70
+New; Concert Hall; 76; 66
+New; Art Building; 92; 67
+New; Boccardo Business Complex; 112; 65
+New; Business Tower; 117; 78
+New; Diaz Compean Student Union; 76; 89
+New; AS Print Shop; 90; 89
+New; Bookstore; 94; 88
+New; ATM; 106; 94
+New; Engineering Building; 76; 110
+New; Industrial Studies; 96; 110
+New; Corporation Yard A; 109; 118
+New; Corporation Yard B; 115; 110
+Add; 5-3; 5-20
+Add; 5-3; 13-3
+Add; 5-20; 5-42
+Add; 5-42; 5-46
+Add; 5-46; 5-53
+Add; 5-42; 12-42
+Add; 5-46; 15-46
+Add; 5-42; 24-46; 19.416
+Add; 15-46; 24-46
+Add; 5-53; 5-68
+Add; 5-68; 5-72
+Add; 5-68; 9-68
+Add; 9-68; 15-68
+Add; 15-68; 21-68
+Add; 5-72; 5-81
+Add; 5-81; 9-81
+Add; 5-81; 5-96
+Add; 5-96; 9-96
+Add; 9-96; 15-96
+Add; 5-96; 5-124
+Add; 5-124; 9-124
+Add; 9-124; 24-124
+Add; 13-3; 23-3
+Add; 23-3; 32-3
+Add; 32-3; 35-3
+Add; 35-3; 41-3
+Add; 41-3; 59-3
+Add; 59-3; 65-3
+Add; 32-3; 32-10
+Add; 32-10; 32-25
+Add; 32-25; 23-25
+Add; 32-25; 38-26; 6.083
+Add; 38-26; 41-25; 3.162
+Add; 41-25; 46-25
+Add; 46-25; 59-25
+Add; 59-25; 62-25
+Add; 38-26; 38-42
+Add; 38-42; 40-42
+Add; 40-42; 44-42
+Add; 44-42; 46-42
+Add; 46-42; 46-38
+Add; 46-38; 46-31
+Add; 46-31; 46-25
+Add; 46-25; 48-29; 4.472
+Add; 46-31; 48-29; 2.828
+Add; 65-3; 65-15
+Add; 65-15; 65-20
+Add; 65-20; 65-26
+Add; 65-26; 62-25
+Add; 65-26; 65-29
+Add; 65-29; 65-35
+Add; 65-35; 64-42; 7.071
+Add; 62-25; 62-42
+Add; 64-42; 62-42
+Add; 62-42; 52-42
+Add; 52-42; 46-42
+Add; 64-42; 64-44
+Add; 64-44; 62-46; 2.828
+Add; 62-46; 64-50; 4.472
+Add; 64-50; 66-46; 4.472
+Add; 66-46; 64-44; 2.828
+Add; 62-46; 52-46
+Add; 52-46; 44-46
+Add; 44-46; 40-46
+Add; 40-46; 32-46
+Add; 32-46; 24-46
+Add; 40-46; 40-42
+Add; 44-46; 44-42
+Add; 52-46; 52-42
+Add; 44-46; 62-42; 18.439
+Add; 44-42; 62-46; 18.439
+Add; 24-46; 40-42; 18.439
+Add; 24-46; 23-52; 6.083
+Add; 23-52; 24-57; 5.099
+Add; 24-46; 24-57
+Add; 24-57; 23-60; 3.162
+Add; 23-60; 21-68; 8.246
+Add; 21-68; 24-68
+Add; 24-68; 31-68
+Add; 24-57; 31-68; 13.038
+Add; 9-68; 9-72
+Add; 5-72; 9-72
+Add; 9-72; 9-81
+Add; 24-68; 24-75
+Add; 24-75; 24-82
+Add; 24-82; 24-86
+Add; 24-82; 21-82
+Add; 24-86; 32-86
+Add; 24-86; 24-96
+Add; 24-96; 24-104
+Add; 24-96; 20-101; 6.403
+Add; 20-101; 24-104; 5
+Add; 31-68; 35-68
+Add; 35-68; 43-68
+Add; 43-68; 51-68
+Add; 35-68; 35-72
+Add; 35-72; 35-75
+Add; 35-75; 35-80
+Add; 32-86; 32-80
+Add; 32-80; 35-80
+Add; 35-80; 38-80
+Add; 38-80; 43-80
+Add; 43-80; 43-77
+Add; 43-77; 47-77
+Add; 47-77; 51-77
+Add; 51-77; 51-68
+Add; 32-86; 32-91
+Add; 32-91; 38-91
+Add; 38-91; 43-91
+Add; 43-91; 43-80
+Add; 43-91; 46-91
+Add; 52-46; 52-57
+Add; 52-57; 53-61; 4.123
+Add; 43-68; 53-61; 12.207
+Add; 51-68; 58-64; 8.062
+Add; 53-61; 47-59; 6.325
+Add; 51-68; 53-61; 7.280
+Add; 64-50; 69-52; 5.385
+Add; 64-50; 60-54; 5.657
+Add; 60-54; 64-60; 7.211
+Add; 64-50; 64-60
+Add; 64-60; 64-64
+Add; 64-64; 64-68
+Add; 58-64; 64-64
+Add; 58-64; 64-68; 7.211
+Add; 58-64; 64-60; 7.211
+Add; 64-68; 68-68
+Add; 64-68; 64-77
+Add; 64-77; 64-80
+Add; 64-80; 64-83
+Add; 64-83; 64-86
+Add; 64-86; 64-94
+Add; 51-77; 55-75; 4.472
+Add; 51-77; 54-80; 4.243
+Add; 54-80; 54-86
+Add; 54-86; 54-91
+Add; 54-91; 46-91
+Add; 54-91; 57-89; 3.606
+Add; 54-91; 56-95; 4.472
+Add; 54-91; 64-94; 10.440
+Add; 56-95; 64-94; 8.062
+Add; 57-89; 64-94; 8.602
+Add; 24-124; 25-124
+Add; 25-124; 29-124
+Add; 29-124; 34-124
+Add; 34-124; 50-124
+Add; 50-124; 64-124
+Add; 24-104; 32-104
+Add; 32-104; 35-104
+Add; 35-104; 38-104
+Add; 38-104; 40-104
+Add; 40-104; 48-104
+Add; 32-104; 32-109
+Add; 35-104; 35-110
+Add; 35-110; 34-118; 8.062
+Add; 34-118; 34-124
+Add; 32-109; 35-110; 3.162
+Add; 24-104; 38-91; 19.105
+Add; 38-91; 38-102
+Add; 38-102; 38-104
+Add; 46-91; 48-97; 6.325
+Add; 48-97; 48-102
+Add; 48-102; 48-104
+Add; 40-104; 40-110
+Add; 48-104; 48-110
+Add; 48-110; 48-116
+Add; 48-116; 50-118; 2.828
+Add; 50-118; 50-124
+Add; 48-110; 53-110
+Add; 48-116; 53-112; 6.403
+Add; 53-110; 53-112
+Add; 64-124; 66-118; 6.325
+Add; 66-118; 62-112; 5.657
+Add; 62-112; 66-101; 11.705
+Add; 66-101; 64-94; 7.280
+Add; 65-3; 84-3
+Add; 84-3; 95-3
+Add; 95-3; 103-3
+Add; 103-3; 106-3
+Add; 106-3; 111-3
+Add; 111-3; 116-3
+Add; 65-15; 71-10; 7.810
+Add; 65-20; 84-20
+Add; 84-20; 95-20
+Add; 65-20; 77-16; 12.649
+Add; 84-20; 77-16; 8.062
+Add; 84-3; 84-10
+Add; 84-10; 84-20
+Add; 95-20; 103-26; 10
+Add; 103-3; 103-12
+Add; 103-12; 103-20
+Add; 103-20; 103-26
+Add; 106-3; 106-20
+Add; 106-20; 106-26
+Add; 103-3; 106-20; 17.263
+Add; 103-20; 106-20
+Add; 103-26; 106-26
+Add; 116-3; 116-15
+Add; 116-15; 111-11; 6.403
+Add; 106-20; 112-22; 6.325
+Add; 106-26; 112-22; 7.211
+Add; 106-20; 116-15; 11.180
+Add; 106-26; 116-32; 11.662
+Add; 112-22; 116-15; 9.220
+Add; 112-22; 116-32; 10.770
+Add; 116-32; 111-36; 6.403
+Add; 103-26; 102-42; 16.031
+Add; 106-26; 102-42; 16.492
+Add; 106-26; 106-42
+Add; 95-20; 95-42
+Add; 64-42; 72-42
+Add; 72-42; 80-42
+Add; 80-42; 87-42
+Add; 87-42; 95-42
+Add; 95-42; 102-42
+Add; 102-42; 106-42
+Add; 106-42; 114-42
+Add; 64-44; 69-45; 5.099
+Add; 69-45; 77-45
+Add; 77-45; 90-45
+Add; 90-45; 97-45
+Add; 97-45; 102-45
+Add; 102-45; 106-45
+Add; 106-45; 109-45
+Add; 69-45; 72-42; 4.243
+Add; 77-45; 80-42; 4.243
+Add; 90-45; 87-42; 4.243
+Add; 97-45; 102-42; 5.831
+Add; 102-42; 102-45
+Add; 106-42; 106-45
+Add; 109-45; 114-42; 5.831
+Add; 109-45; 106-42; 4.243
+Add; 64-60; 76-60
+Add; 76-60; 76-62
+Add; 76-62; 86-62
+Add; 86-62; 89-62
+Add; 89-62; 96-62
+Add; 96-62; 102-61; 5.099
+Add; 102-45; 102-55
+Add; 102-55; 102-61
+Add; 102-61; 102-67
+Add; 106-45; 106-48
+Add; 106-48; 106-55
+Add; 106-55; 106-61
+Add; 102-55; 106-48; 8.062
+Add; 106-61; 106-67
+Add; 102-55; 106-55
+Add; 102-61; 106-61
+Add; 102-67; 106-67
+Add; 106-61; 108-65; 4.472
+Add; 106-67; 108-65; 2.828
+Add; 64-77; 68-77
+Add; 64-80; 68-80
+Add; 68-77; 68-78
+Add; 68-78; 68-80
+Add; 68-78; 72-78
+Add; 72-78; 77-79
+Add; 77-79; 82-79
+Add; 82-79; 86-79
+Add; 86-79; 89-79
+Add; 89-79; 93-79
+Add; 93-79; 99-79
+Add; 99-79; 102-79
+Add; 102-79; 106-79
+Add; 86-62; 86-79
+Add; 64-83; 72-83
+Add; 72-83; 76-83
+Add; 76-83; 82-83
+Add; 72-83; 72-78
+Add; 82-79; 82-83
+Add; 86-79; 86-81
+Add; 86-81; 82-83; 4.472
+Add; 93-79; 96-69; 10.440
+Add; 102-67; 102-79
+Add; 106-67; 106-75
+Add; 106-75; 106-79
+Add; 102-67; 106-75; 8.944
+Add; 106-75; 112-78; 6.708
+Add; 106-79; 112-78; 6.082
+Add; 64-94; 72-94
+Add; 72-94; 82-94
+Add; 88-94; 82-94
+Add; 88-94; 98-97; 10.440
+Add; 98-97; 102-94; 5
+Add; 102-94; 103-84; 10.050
+Add; 103-84; 102-79; 5.099
+Add; 103-84; 106-79; 5.831
+Add; 64-124; 82-124
+Add; 82-124; 88-124
+Add; 88-124; 88-104
+Add; 88-104; 88-94
+Add; 88-124; 102-124
+Add; 102-124; 102-118
+Add; 102-118; 102-115
+Add; 102-115; 102-103
+Add; 102-103; 102-94
+Add; 102-124; 106-123; 4.123
+Add; 106-123; 106-115
+Add; 106-115; 106-110
+Add; 106-110; 106-103
+Add; 106-103; 106-97
+Add; 106-97; 102-94; 5
+Add; 102-115; 106-115
+Add; 102-103; 106-103
+Add; 102-115; 106-123; 8.944
+Add; 102-103; 106-97; 7.211
+Add; West Parking Garage; 5-20
+Add; West Parking Garage; 13-3
+Add; West Parking Garage; 12-42
+Add; Duncan Hall; 23-3
+Add; Duncan Hall; 23-25
+Add; South Parking Garage; 41-3
+Add; South Parking Garage; 59-3
+Add; South Parking Garage; 41-25
+Add; South Parking Garage; 59-25
+Add; MacQuarrie Hall; 38-26
+Add; MacQuarrie Hall; 46-31
+Add; MacQuarrie Hall; 46-38
+Add; MacQuarrie Hall; 38-42
+Add; Sweeney Hall; 52-42
+Add; Sweeney Hall; 62-42
+Add; Yoshihiro Uchida Hall; 5-53
+Add; Yoshihiro Uchida Hall; 15-46
+Add; Yoshihiro Uchida Hall; 15-68
+Add; Yoshihiro Uchida Hall; 23-52
+Add; Spartan Memorial; 23-60
+Add; Spartan Complex Central; 23-52
+Add; Spartan Complex Central; 40-46
+Add; Spartan Complex East; 44-46
+Add; Spartan Complex East; 52-57
+Add; Spartan Complex East; 47-59
+Add; Student Wellness Center; 60-54
+Add; Faculty Offices; 43-68
+Add; Washington Square Hall; 9-72
+Add; Washington Square Hall; 9-81
+Add; Washington Square Hall; 24-75
+Add; Science Building; 21-82
+Add; Science Building; 9-96
+Add; Science Building; 15-96
+Add; Tower Hall; 32-86
+Add; Tower Hall; 38-91
+Add; Morris Dailey Auditorium; 38-91
+Add; Morris Dailey Auditorium; 38-80
+Add; Dwight Bentel Hall; 35-72
+Add; Dwight Bentel Hall; 35-75
+Add; Dwight Bentel Hall; 43-68
+Add; Dwight Bentel Hall; 43-77
+Add; Dwight Bentel Hall; 47-77
+Add; Central Classroom Building; 55-75
+Add; Central Classroom Building; 58-64
+Add; Central Classroom Building; 64-77
+Add; Central Classroom Building; 57-89
+Add; Dr. Martin Luther King, Jr. Library; 9-124
+Add; Dr. Martin Luther King, Jr. Library; 20-101
+Add; University Theatre; 25-124
+Add; Hugh Gillis Hall; 29-124
+Add; Hugh Gillis Hall; 34-118
+Add; Hugh Gillis Hall; 32-109
+Add; Dudley Moorhead Hall; 34-118
+Add; Dudley Moorhead Hall; 50-118
+Add; Instructional Resource Center; 40-110
+Add; Instructional Resource Center; 48-110
+Add; Computer Center; 38-102
+Add; Computer Center; 48-102
+Add; Career Center; 50-118
+Add; Administration; 53-110
+Add; Administration; 53-112
+Add; Administration; 62-112
+Add; Clark Hall; 56-95
+Add; Washburn Hall; 71-10
+Add; Washburn Hall; 77-16
+Add; Dining Commons; 84-10
+Add; Joe West Hall; 103-12
+Add; Spartan Recreation and Aquatic Center; 69-39
+Add; Campus Village 2; 103-26
+Add; Campus Village 2; 102-42
+Add; Campus Village A; 111-11
+Add; Campus Village B; 112-22
+Add; Campus Village B; 116-15
+Add; Campus Village B; 116-32
+Add; Campus Village C; 111-36
+Add; Event Center; 69-52
+Add; Health Building; 97-45
+Add; Health Building; 102-55
+Add; Cooling Plant; 106-55
+Add; Music Building; 68-68
+Add; Music Building; 77-79
+Add; Concert Hall; 76-62
+Add; Art Building; 96-69
+Add; Art Building; 89-62
+Add; Art Building; 102-67
+Add; Boccardo Business Complex; 108-65
+Add; Business Tower; 112-78
+Add; Diaz Compean Student Union; 64-86
+Add; Diaz Compean Student Union; 76-83
+Add; Diaz Compean Student Union; 82-83
+Add; Diaz Compean Student Union; 86-81
+Add; Diaz Compean Student Union; 82-94
+Add; Diaz Compean Student Union; 89-79
+Add; Diaz Compean Student Union; 98-97
+Add; AS Print Shop; 98-97
+Add; Bookstore; 98-97
+Add; ATM; 102-94
+Add; Engineering Building; 66-118
+Add; Engineering Building; 66-101
+Add; Engineering Building; 72-94
+Add; Engineering Building; 82-94
+Add; Engineering Building; 82-124
+Add; Industrial Studies; 98-97
+Add; Industrial Studies; 102-118
+Add; Corporation Yard A; 106-123
+Add; Corporation Yard A; 106-115
+Add; Corporation Yard B; 106-110
+Add; Washington Square Hall; Science Building
+Add; Spartan Complex Central; Spartan Complex East
+Add; Dudley Moorhead Hall; Instructional Resource Center
+Add; Career Center; Administration
+Add; Diaz Compean Student Union; AS Print Shop
+Add; Diaz Compean Student Union; Bookstore
