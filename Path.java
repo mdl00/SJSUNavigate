@@ -13,14 +13,15 @@ public class Path {
     }
 
     // Find the total distance of a Path.
-    public double findTotalDistance() {
+    public double findTotalDistance(boolean unitInFeet) {
         double distance = 0;
         for (int i = 1; i < path.size(); i++) {
             Node node1 = path.get(i - 1);
             Node node2 = path.get(i);
             distance += node1.getDistanceOf(node2);
         }
-        return distance;
+        double distanceInFeet = distance * 2000 / 128;
+        return unitInFeet ? distanceInFeet : distanceInFeet * 0.3048;
     }
 
     // Find the total Manhattan distance of a Path.
@@ -43,6 +44,12 @@ public class Path {
             distance += node1.findEuclideanDistance(node2);
         }
         return distance;
+    }
+
+    // Fine the estimated time it takes to walk from Start to Destination.
+    public int findEstimatedTime() {
+        int walkingSpeed = 275; // Unit: feet/min
+        return (int) findTotalDistance(true) / walkingSpeed;
     }
 
     // Find the Path from start Node to destination Node.
@@ -102,8 +109,8 @@ public class Path {
     public static Path findShortestPathByName(String fileName, String node1Name, String node2Name) {
         Path path1 = findPath(fileName, node1Name, node2Name);
         Path path2 = findPath(fileName, node2Name, node1Name);
-        double path1Distance = Node.roundToTwoDecimalPlaces(path1.findTotalDistance());
-        double path2Distance = Node.roundToTwoDecimalPlaces(path2.findTotalDistance());
+        double path1Distance = Node.roundToTwoDecimalPlaces(path1.findTotalDistance(true));
+        double path2Distance = Node.roundToTwoDecimalPlaces(path2.findTotalDistance(true));
         return path2Distance < path1Distance ? path2.getReversedPath() : path1;
     }
 
@@ -121,7 +128,7 @@ public class Path {
         if (Map.getCapitalizedName(lowerCase) != null) return Map.getCapitalizedName(lowerCase);
         return name;
     }
-    
+
     public LinkedList<Node> getPath() {
         return path;
     }
@@ -142,7 +149,8 @@ public class Path {
             String node2 = getCorrectName(info[1]);
             Path shortest = findShortestPathByName(fileName, node1, node2);
             System.out.println("From [" + node1 + "] to [" + node2 + "]");
-            System.out.println(shortest + "; distance: " + Node.roundToTwoDecimalPlaces(shortest.findTotalDistance()) + "\n");
+            System.out.println(shortest + "; distance: " + (int) shortest.findTotalDistance(true)
+                    + " ft; estimated time: " + shortest.findEstimatedTime() + " min\n");
         }
     }
 }
