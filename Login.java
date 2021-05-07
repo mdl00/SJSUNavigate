@@ -19,7 +19,7 @@ import java.awt.event.MouseEvent;
 
 public class Login {
 
-	private JFrame frame;
+	public JFrame frame;
 	private JTextField txtUsername;
 	private JPasswordField txtPassword;
 	private JTextField txtLogIn;
@@ -28,13 +28,19 @@ public class Login {
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
+	public static void main(String[] args) 
+	{
+		EventQueue.invokeLater(new Runnable() 
+		{
+			public void run() 
+			{
+				try 
+				{
 					Login window = new Login();
 					window.frame.setVisible(true);
-				} catch (Exception e) {
+				} 
+				catch (Exception e) 
+				{
 					e.printStackTrace();
 				}
 			}
@@ -131,6 +137,10 @@ public class Login {
 				{
 					belowLogin.setText("");
 					JOptionPane.showMessageDialog(null, "Login successful!");
+					frame.setVisible(false);
+					frame.dispose();
+					SJSUNav sn = new SJSUNav();
+					sn.start();
 				}
 				else
 				{
@@ -155,6 +165,10 @@ public class Login {
 				{
 					belowLogin.setText("");
 					JOptionPane.showMessageDialog(null, "Login successful!");
+					frame.setVisible(false);
+					frame.dispose();
+					SJSUNav sn = new SJSUNav();
+					sn.start();
 				}
 				else
 				{
