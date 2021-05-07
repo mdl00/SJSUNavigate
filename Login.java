@@ -1,4 +1,4 @@
-package login_screen;
+
 
 import java.awt.EventQueue;
 
@@ -53,7 +53,7 @@ public class Login {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.getContentPane().setBackground(SystemColor.activeCaptionBorder);
+		frame.getContentPane().setBackground(new Color(70, 130, 180));
 		frame.setBounds(200, 200, 650, 400);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
@@ -73,10 +73,6 @@ public class Login {
 				if (txtUsername.getText().equals("Username"))
 				{
 					txtUsername.setText("");
-				}
-				else
-				{
-					txtUsername.selectAll();
 				}
 			}
 			public void focusLost(FocusEvent e)
@@ -114,12 +110,14 @@ public class Login {
 				if (txtPassword.getText().equals(""))
 				{
 					txtPassword.setText("Password");
+					txtPassword.setEchoChar((char)(0));
 				}
 			}
 		});
 		txtPassword.setFont(new Font("Times New Roman", Font.PLAIN, 13));
 		txtPassword.setText("Password");
 		txtPassword.setToolTipText("Enter Password");
+		txtPassword.setEchoChar((char)(0));
 		txtPassword.setBounds(202, 172, 218, 42);
 		frame.getContentPane().add(txtPassword);
 		
@@ -174,7 +172,7 @@ public class Login {
 		
 		belowLogin = new JTextField();
 		belowLogin.setFont(new Font("Times New Roman", Font.PLAIN, 13));
-		belowLogin.setBackground(SystemColor.activeCaptionBorder);
+		belowLogin.setBackground(new Color(70, 130, 180));
 		belowLogin.setEditable(false);
 		belowLogin.setBounds(224, 332, 218, 20);
 		frame.getContentPane().add(belowLogin);
