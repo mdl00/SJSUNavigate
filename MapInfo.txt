@@ -209,7 +209,6 @@ New; 106-103; 106; 103
 New; 106-110; 106; 110
 New; 106-115; 106; 115
 New; 106-123; 106; 123
-New; 106-136; 106; 136
 New; 108-65; 108; 65
 New; 109-45; 109; 45
 New; 111-3; 111; 3
@@ -272,8 +271,6 @@ New; Engineering Building; 76; 110
 New; Industrial Studies; 96; 110
 New; Corporation Yard A; 109; 118
 New; Corporation Yard B; 115; 110
-New; North Parking Garage; 116; 144
-New; Student Services Center; 116; 144
 Add; 5-3; 5-20
 Add; 5-3; 13-3
 Add; 5-20; 5-42
@@ -693,5 +690,3 @@ Add; Dudley Moorhead Hall; Instructional Resource Center
 Add; Career Center; Administration
 Add; Diaz Compean Student Union; AS Print Shop
 Add; Diaz Compean Student Union; Bookstore
-Add; North Parking Garage; 106-136
-Add; Student Services Center; 106-136
