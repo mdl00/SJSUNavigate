@@ -75,8 +75,7 @@ class MapImage extends Canvas {
 		onRoute[x][y] = isOn;
 	}
 	
-	public void paint(Graphics g) {  
-		
+	public void paint(Graphics g) {
 		final String GREEN_PATH = "/Users/matthew/Downloads/greenblock.png";
 		final String TGREEN_PATH = "/Users/matthew/Downloads/transparentgreenblock.png";
 		final String RED_PATH = "/Users/matthew/Downloads/redblock.png";
@@ -163,7 +162,7 @@ class MapImage extends Canvas {
         for (int i = 0; i < 128; i++) {
         	for (int j = 0; j < 128; j++) {
         		if (gridButtons[i][j] != null) {
-        			System.out.println(i + ", " + j);
+        			//System.out.println(i + ", " + j);
         		}
         	}
         }
@@ -228,8 +227,8 @@ public class SJSUNav {
 				@Override
 				public void mouseClicked(MouseEvent e) 
 				{
-					mi.showRoute(true);
-    				LinkedList<Node> path = Path.findShortestPathByName("/Users/matthew/Downloads/MapInfo.txt", startField.getText(), endField.getText()).getPath();
+					mi.showRoute(false);
+    				LinkedList<Node> path = Path.findShortestPathByName("/Users/matthew/Downloads/MapInfo.txt", startField.getText().toUpperCase(), endField.getText().toUpperCase()).getPath();
     				System.out.println("LIST OUTPUT: ");
     				System.out.println(path.toString());
     				for (int i = 0; i < path.size(); i++) {
@@ -262,6 +261,7 @@ public class SJSUNav {
     						}
     					}
     				}
+    				mi.showRoute(true);
     				mi.repaint();
 				}
 			});
@@ -348,7 +348,7 @@ public class SJSUNav {
 		        	}
 	            }
 	        });
-		
+			mi.repaint();
 			mainWindow.add(mi);		
 			mainWindow.setSize(800,800);  
 		    mainWindow.setVisible(true); 
