@@ -1,3 +1,5 @@
+import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -13,9 +15,12 @@ import javax.imageio.ImageIO;
 class MapImage extends Canvas {
 	
 	JButton[][] gridButtons = new JButton[128][128];
+	boolean[][] onRoute = new boolean[128][128];
+	LinkedList<Node> nodes = new LinkedList<Node>();
 	
 	int xStart = -1, yStart = -1;
 	int xEnd = -1, yEnd = -1;
+	boolean showRoute = false;
 	
 	public JButton[][] getButtons() {
 		return gridButtons;
@@ -31,6 +36,16 @@ class MapImage extends Canvas {
 		yEnd = y;
 	}
 	
+	public int[] getStart() {
+		int[] result = {xStart, yStart};
+		return result;
+	}
+	
+	public int[] getEnd() {
+		int[] result = {xEnd, yEnd};
+		return result;
+	}
+	
 	public boolean hasStart() {
 		if (xStart != -1) return true;
 		return false;
@@ -39,6 +54,25 @@ class MapImage extends Canvas {
 	public boolean hasEnd() {
 		if (xEnd != -1) return true;
 		return false;
+	}
+	
+	public void showRoute(boolean show) {
+		showRoute = show;
+		if (!show) {
+			for (int i = 0; i < 128; i++) {
+				for (int j = 0; j < 128; j++) {
+					onRoute[i][j] = false;
+				}
+			}
+		}
+	}
+	
+	public LinkedList<Node> getNodes() {
+		return nodes;
+	}
+	
+	public void includeOnRoute(boolean isOn, int x, int y) {
+		onRoute[x][y] = isOn;
 	}
 	
 	public void paint(Graphics g) {  
@@ -75,7 +109,7 @@ class MapImage extends Canvas {
     		bimg = ImageIO.read(new File(TBLUE_PATH));
     		final ImageIcon tblueicon = new ImageIcon(bimg);
         	
-        	File input = new File("/Users/matthew/Downloads/mapfile.txt");
+        	File input = new File("/Users/matthew/Downloads/MapInfo.txt");
         	Scanner scan = new Scanner(input);
         	int xCoord, yCoord;
         	
@@ -84,12 +118,26 @@ class MapImage extends Canvas {
 	        		gridButtons[i][j] = null;
 	        	}
 			}
+			
+			if (showRoute) {
+				for (int i = 0; i < 128; i++) {
+					for (int j = 0; j < 128; j++) {
+						if (onRoute[i][j]) {
+							g.setColor(Color.CYAN);
+							g.fillRect(i*5 + 32, (128-j)*4 + 174, 5, 4);
+						}
+					}
+				}
+			}
+			
         	while (scan.hasNextLine()) {
         		String line = scan.nextLine();
         		String[] info = line.split("; ");
         		if (info[0].equals("New")) {
         			xCoord = Integer.parseInt(info[2]);
         			yCoord = Integer.parseInt(info[3]);
+        			Node node = new Node(info[1], xCoord, yCoord);
+                    nodes.add(node);
         			if (xCoord == xStart && yCoord == yStart) {
         				g.setColor(Color.GREEN);
         			} else if (xCoord == xEnd && yCoord == yEnd) {
@@ -158,20 +206,71 @@ public class SJSUNav {
 		        	y = (int) b.getY();
 		        	x = (x-32)/5;
 		        	y = 183 - y/4;
-		        	System.out.println(x + ", " + y);
+		        	//System.out.println(x + ", " + y);
 		        	if (x < 128 && y < 128) {
 		        		if (mi.getButtons()[x][y] != null) {
 		        			if (mi.hasStart() && mi.hasEnd()) {
 		        				mi.setStart(x, y);
 		        				mi.setEnd(-1, -1);
+		        				mi.showRoute(false);
 		        			} else if (!mi.hasStart()) {
 		        				mi.setStart(x, y);
+		        				mi.showRoute(false);
 		        			} else if (!mi.hasEnd()) {
 		        				mi.setEnd(x, y);
+		        				int[] startPoint = mi.getStart();
+		        				int[] endPoint = mi.getEnd();
+		        				String startName = "", endName = "";
+		        				for (int i = 0; i < mi.getNodes().size(); i++) {
+		        					if (mi.getNodes().get(i).getX() == startPoint[0] && mi.getNodes().get(i).getY() == startPoint[1]) {
+		        						startName = mi.getNodes().get(i).getName();
+		        					}
+		        					if (mi.getNodes().get(i).getX() == endPoint[0] && mi.getNodes().get(i).getY() == endPoint[1]) {
+		        						endName = mi.getNodes().get(i).getName();
+		        					}
+		        				}
+		        				mi.showRoute(true);
+		        				String startCoord = mi.getStart()[0] + "-" + mi.getStart()[1];
+		        				String endCoord = mi.getEnd()[0] + "-" + mi.getEnd()[1];
+		        				System.out.println("PATH FROM " + startCoord + " TO " + endCoord);
+		        				LinkedList<Node> path = Path.findShortestPathByName("/Users/matthew/Downloads/MapInfo.txt", startName, endName).getPath();
+		        				System.out.println("LIST OUTPUT: ");
+		        				System.out.println(path.toString());
+		        				for (int i = 0; i < path.size(); i++) {
+		        					if (!(path.get(i).toString().contains("-"))) path.remove(i);
+		        				}
+		        				for (int i = 0; i < path.size() - 1; i++) {
+		        					int startX = path.get(i).getX();
+		        					int startY = path.get(i).getY();
+		        					int endX = path.get(i+1).getX();
+		        					int endY = path.get(i+1).getY();
+		        					
+		        					System.out.println("CONNECTING NODES " + startX + "-" + startY + " TO " + endX + "-" + endY);
+		        					
+		        					if (endX > startX) {
+		        						for (int j = startX + 1; j <= endX; j++) {
+		        							mi.includeOnRoute(true, j, startY);
+		        						}
+		        					} else {
+		        						for (int j = startX - 1; j >= endX; j--) {
+		        							mi.includeOnRoute(true, j, startY);
+		        						}
+		        					}
+		        					if (endY > startY) {
+		        						for (int j = startY + 1; j < endY; j++) {
+		        							mi.includeOnRoute(true, endX, j);
+		        						}
+		        					} else {
+		        						for (int j = startY - 1; j > endY; j--) {
+		        							mi.includeOnRoute(true, endX, j);
+		        						}
+		        					}
+		        				}
 		        			}
 						} else {
 							mi.setStart(-1, -1);
 							mi.setEnd(-1, -1);
+							mi.showRoute(false);
 						}
 		        		mi.repaint();
 		        	}
