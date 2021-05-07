@@ -13,15 +13,17 @@ public class Path {
     }
 
     // Find the total distance of a Path.
-    public double findTotalDistance(boolean unitInFeet) {
+    public double findTotalDistance(boolean unitInFoot) {
         double distance = 0;
         for (int i = 1; i < path.size(); i++) {
             Node node1 = path.get(i - 1);
             Node node2 = path.get(i);
             distance += node1.getDistanceOf(node2);
         }
-        double distanceInFeet = distance * 2000 / 128;
-        return unitInFeet ? distanceInFeet : distanceInFeet * 0.3048;
+        int campusLength = 2000; // Unit: foot
+        double footMeterConversion = 0.3048; // 1 ft = 0.3048 m
+        double distanceInFoot = distance * campusLength / 128;
+        return unitInFoot ? distanceInFoot : distanceInFoot * footMeterConversion;
     }
 
     // Find the total Manhattan distance of a Path.
@@ -48,7 +50,7 @@ public class Path {
 
     // Fine the estimated time it takes to walk from Start to Destination.
     public int findEstimatedTime() {
-        int walkingSpeed = 275; // Unit: feet/min
+        int walkingSpeed = 275; // Unit: foot/min
         return (int) findTotalDistance(true) / walkingSpeed;
     }
 
@@ -154,4 +156,3 @@ public class Path {
         }
     }
 }
-
