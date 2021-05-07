@@ -182,7 +182,37 @@ public class SJSUNav {
 	public static void main(String args[]) {
 		Direction d = Direction.LEFT;
 		
+		Login login = new Login();
+		login.start();
+		
 		JFrame mainWindow = new JFrame();
+		mainWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		JTextField startField = new JTextField();
+		startField.setBounds(20, 720, 200, 20);
+		startField.setVisible(true);
+		mainWindow.add(startField);
+		
+		JLabel startLabel = new JLabel();
+		startLabel.setText("Starting point");
+		startLabel.setBounds(20, 750, 200, 20);
+		mainWindow.add(startLabel);
+		
+		JTextField endField = new JTextField();
+		endField.setBounds(270, 720, 200, 20);
+		endField.setVisible(true);
+		mainWindow.add(endField);
+		
+		JLabel endLabel = new JLabel();
+		endLabel.setText("Destination");
+		endLabel.setBounds(270, 750, 200, 20);
+		mainWindow.add(endLabel);
+		
+		JButton confirm = new JButton();
+		confirm.setText("Find Route");
+		confirm.setBounds(500, 720, 80, 20);
+		confirm.setVisible(true);
+		mainWindow.add(confirm);
 		
 		try {
 			MapImage mi = new MapImage();
@@ -192,6 +222,49 @@ public class SJSUNav {
 					if (mi.getButtons()[i][j] != null) mainWindow.add(mi.getButtons()[i][j]);
 				}
 			}
+			
+			confirm.addMouseListener(new MouseAdapter() 
+			{
+				@Override
+				public void mouseClicked(MouseEvent e) 
+				{
+					mi.showRoute(true);
+    				LinkedList<Node> path = Path.findShortestPathByName("/Users/matthew/Downloads/MapInfo.txt", startField.getText(), endField.getText()).getPath();
+    				System.out.println("LIST OUTPUT: ");
+    				System.out.println(path.toString());
+    				for (int i = 0; i < path.size(); i++) {
+    					if (!(path.get(i).toString().contains("-"))) path.remove(i);
+    				}
+    				for (int i = 0; i < path.size() - 1; i++) {
+    					int startX = path.get(i).getX();
+    					int startY = path.get(i).getY();
+    					int endX = path.get(i+1).getX();
+    					int endY = path.get(i+1).getY();
+    					
+    					System.out.println("CONNECTING NODES " + startX + "-" + startY + " TO " + endX + "-" + endY);
+    					
+    					if (endX > startX) {
+    						for (int j = startX + 1; j <= endX; j++) {
+    							mi.includeOnRoute(true, j, startY);
+    						}
+    					} else {
+    						for (int j = startX - 1; j >= endX; j--) {
+    							mi.includeOnRoute(true, j, startY);
+    						}
+    					}
+    					if (endY > startY) {
+    						for (int j = startY + 1; j < endY; j++) {
+    							mi.includeOnRoute(true, endX, j);
+    						}
+    					} else {
+    						for (int j = startY - 1; j > endY; j--) {
+    							mi.includeOnRoute(true, endX, j);
+    						}
+    					}
+    				}
+    				mi.repaint();
+				}
+			});
 						
 			mi.addMouseListener(new MouseAdapter() {
 				
@@ -206,7 +279,6 @@ public class SJSUNav {
 		        	y = (int) b.getY();
 		        	x = (x-32)/5;
 		        	y = 183 - y/4;
-		        	//System.out.println(x + ", " + y);
 		        	if (x < 128 && y < 128) {
 		        		if (mi.getButtons()[x][y] != null) {
 		        			if (mi.hasStart() && mi.hasEnd()) {
