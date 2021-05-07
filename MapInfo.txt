@@ -220,57 +220,57 @@ New; 114-42; 114; 42
 New; 116-3; 116; 3
 New; 116-15; 116; 15
 New; 116-32; 116; 32
-New; West Parking Garage; 10; 20
-New; Duncan Hall; 23; 15
-New; South Parking Garage; 48; 15
-New; University Police Department; 62; 15
-New; MacQuarrie Hall; 40; 33
-New; Sweeney Hall; 57; 33
-New; Yoshihiro Uchida Hall; 15; 55
-New; Spartan Complex Central; 34; 54
-New; Spartan Complex East; 47; 54
-New; Spartan Memorial; 25; 64
-New; Faculty Offices; 39; 65
-New; Student Wellness Center; 57; 54
-New; Washington Square Hall; 15; 72
-New; Science Building; 12; 89
-New; Tower Hall; 35; 88
-New; Morris Dailey Auditorium; 38; 86
-New; Dwight Bentel Hall; 43; 74
-New; Central Classroom Building; 58; 77
-New; Dr. Martin Luther King, Jr. Library; 15; 112
-New; Hugh Gillis Hall; 28; 116
-New; University Theatre; 26; 120
-New; Dudley Moorhead Hall; 40; 118
-New; Instructional Resource Center; 43; 111
-New; Career Center; 58; 118
-New; Administration; 58; 111
-New; Computer Center; 43; 102
-New; Clark Hall; 60; 101
-New; Washburn Hall; 73; 12
-New; Dining Commons; 91; 10
-New; Joe West Hall; 100; 12
-New; Spartan Recreation and Aquatic Center; 76; 34
-New; Campus Village 2; 100; 33
-New; Campus Village A; 108; 10
-New; Campus Village B; 115; 22
-New; Campus Village C; 108; 36
-New; Event Center; 80; 52
-New; Health Building; 97; 55
-New; Cooling Plant; 112; 54
-New; Music Building; 76; 70
-New; Concert Hall; 76; 66
-New; Art Building; 92; 67
-New; Boccardo Business Complex; 112; 65
-New; Business Tower; 117; 78
-New; Diaz Compean Student Union; 76; 89
-New; AS Print Shop; 90; 89
-New; Bookstore; 94; 88
+New; WPG; 10; 20
+New; DH; 23; 15
+New; SPG; 48; 15
+New; UPD; 62; 15
+New; MH; 40; 33
+New; SH; 57; 33
+New; YUH; 15; 55
+New; SPXC; 34; 54
+New; SPXE; 47; 54
+New; SPM; 25; 64
+New; FOB; 39; 65
+New; SWC; 57; 54
+New; WSQ; 15; 72
+New; SCI; 12; 89
+New; TH; 35; 88
+New; MD; 38; 86
+New; DBH; 43; 74
+New; CCB; 58; 77
+New; KING; 15; 112
+New; HGH; 28; 116
+New; UT; 26; 120
+New; DMH; 40; 118
+New; IRC; 43; 111
+New; CAR; 58; 118
+New; ADM; 58; 111
+New; CC; 43; 102
+New; CL; 60; 101
+New; WSH; 73; 12
+New; DC; 91; 10
+New; JWH; 100; 12
+New; SRAC; 76; 34
+New; CV2; 100; 33
+New; CVA; 108; 10
+New; CVB; 115; 22
+New; CVC; 108; 36
+New; EC; 80; 52
+New; HB; 97; 55
+New; CP; 112; 54
+New; MUS; 76; 70
+New; CH; 76; 66
+New; ART; 92; 67
+New; BBC; 112; 65
+New; BT; 117; 78
+New; SU; 76; 89
+New; ASP; 90; 89
+New; BK; 94; 88
 New; ATM; 106; 94
-New; Engineering Building; 76; 110
-New; Industrial Studies; 96; 110
-New; Corporation Yard A; 109; 118
-New; Corporation Yard B; 115; 110
+New; ENG; 76; 110
+New; IS; 96; 110
+New; CYA; 109; 118
+New; CYB; 115; 110
 Add; 5-3; 5-20
 Add; 5-3; 13-3
 Add; 5-20; 5-42
@@ -577,116 +577,116 @@ Add; 102-115; 106-115
 Add; 102-103; 106-103
 Add; 102-115; 106-123; 8.944
 Add; 102-103; 106-97; 7.211
-Add; West Parking Garage; 5-20
-Add; West Parking Garage; 13-3
-Add; West Parking Garage; 12-42
-Add; Duncan Hall; 23-3
-Add; Duncan Hall; 23-25
-Add; South Parking Garage; 41-3
-Add; South Parking Garage; 59-3
-Add; South Parking Garage; 41-25
-Add; South Parking Garage; 59-25
-Add; MacQuarrie Hall; 38-26
-Add; MacQuarrie Hall; 46-31
-Add; MacQuarrie Hall; 46-38
-Add; MacQuarrie Hall; 38-42
-Add; Sweeney Hall; 52-42
-Add; Sweeney Hall; 62-42
-Add; Yoshihiro Uchida Hall; 5-53
-Add; Yoshihiro Uchida Hall; 15-46
-Add; Yoshihiro Uchida Hall; 15-68
-Add; Yoshihiro Uchida Hall; 23-52
-Add; Spartan Memorial; 23-60
-Add; Spartan Complex Central; 23-52
-Add; Spartan Complex Central; 40-46
-Add; Spartan Complex East; 44-46
-Add; Spartan Complex East; 52-57
-Add; Spartan Complex East; 47-59
-Add; Student Wellness Center; 60-54
-Add; Faculty Offices; 43-68
-Add; Washington Square Hall; 9-72
-Add; Washington Square Hall; 9-81
-Add; Washington Square Hall; 24-75
-Add; Science Building; 21-82
-Add; Science Building; 9-96
-Add; Science Building; 15-96
-Add; Tower Hall; 32-86
-Add; Tower Hall; 38-91
-Add; Morris Dailey Auditorium; 38-91
-Add; Morris Dailey Auditorium; 38-80
-Add; Dwight Bentel Hall; 35-72
-Add; Dwight Bentel Hall; 35-75
-Add; Dwight Bentel Hall; 43-68
-Add; Dwight Bentel Hall; 43-77
-Add; Dwight Bentel Hall; 47-77
-Add; Central Classroom Building; 55-75
-Add; Central Classroom Building; 58-64
-Add; Central Classroom Building; 64-77
-Add; Central Classroom Building; 57-89
-Add; Dr. Martin Luther King, Jr. Library; 9-124
-Add; Dr. Martin Luther King, Jr. Library; 20-101
-Add; University Theatre; 25-124
-Add; Hugh Gillis Hall; 29-124
-Add; Hugh Gillis Hall; 34-118
-Add; Hugh Gillis Hall; 32-109
-Add; Dudley Moorhead Hall; 34-118
-Add; Dudley Moorhead Hall; 50-118
-Add; Instructional Resource Center; 40-110
-Add; Instructional Resource Center; 48-110
-Add; Computer Center; 38-102
-Add; Computer Center; 48-102
-Add; Career Center; 50-118
-Add; Administration; 53-110
-Add; Administration; 53-112
-Add; Administration; 62-112
-Add; Clark Hall; 56-95
-Add; Washburn Hall; 71-10
-Add; Washburn Hall; 77-16
-Add; Dining Commons; 84-10
-Add; Joe West Hall; 103-12
-Add; Spartan Recreation and Aquatic Center; 69-39
-Add; Campus Village 2; 103-26
-Add; Campus Village 2; 102-42
-Add; Campus Village A; 111-11
-Add; Campus Village B; 112-22
-Add; Campus Village B; 116-15
-Add; Campus Village B; 116-32
-Add; Campus Village C; 111-36
-Add; Event Center; 69-52
-Add; Health Building; 97-45
-Add; Health Building; 102-55
-Add; Cooling Plant; 106-55
-Add; Music Building; 68-68
-Add; Music Building; 77-79
-Add; Concert Hall; 76-62
-Add; Art Building; 96-69
-Add; Art Building; 89-62
-Add; Art Building; 102-67
-Add; Boccardo Business Complex; 108-65
-Add; Business Tower; 112-78
-Add; Diaz Compean Student Union; 64-86
-Add; Diaz Compean Student Union; 76-83
-Add; Diaz Compean Student Union; 82-83
-Add; Diaz Compean Student Union; 86-81
-Add; Diaz Compean Student Union; 82-94
-Add; Diaz Compean Student Union; 89-79
-Add; Diaz Compean Student Union; 98-97
-Add; AS Print Shop; 98-97
-Add; Bookstore; 98-97
+Add; WPG; 5-20
+Add; WPG; 13-3
+Add; WPG; 12-42
+Add; DH; 23-3
+Add; DH; 23-25
+Add; SPG; 41-3
+Add; SPG; 59-3
+Add; SPG; 41-25
+Add; SPG; 59-25
+Add; MH; 38-26
+Add; MH; 46-31
+Add; MH; 46-38
+Add; MH; 38-42
+Add; SH; 52-42
+Add; SH; 62-42
+Add; YUH; 5-53
+Add; YUH; 15-46
+Add; YUH; 15-68
+Add; YUH; 23-52
+Add; SPM; 23-60
+Add; SPXC; 23-52
+Add; SPXC; 40-46
+Add; SPXE; 44-46
+Add; SPXE; 52-57
+Add; SPXE; 47-59
+Add; SWC; 60-54
+Add; FOB; 43-68
+Add; WSQ; 9-72
+Add; WSQ; 9-81
+Add; WSQ; 24-75
+Add; SCI; 21-82
+Add; SCI; 9-96
+Add; SCI; 15-96
+Add; TH; 32-86
+Add; TH; 38-91
+Add; MD; 38-91
+Add; MD; 38-80
+Add; DBH; 35-72
+Add; DBH; 35-75
+Add; DBH; 43-68
+Add; DBH; 43-77
+Add; DBH; 47-77
+Add; CCB; 55-75
+Add; CCB; 58-64
+Add; CCB; 64-77
+Add; CCB; 57-89
+Add; KING; 9-124
+Add; KING; 20-101
+Add; UT; 25-124
+Add; HGH; 29-124
+Add; HGH; 34-118
+Add; HGH; 32-109
+Add; DMH; 34-118
+Add; DMH; 50-118
+Add; IRC; 40-110
+Add; IRC; 48-110
+Add; CC; 38-102
+Add; CC; 48-102
+Add; CAR; 50-118
+Add; ADM; 53-110
+Add; ADM; 53-112
+Add; ADM; 62-112
+Add; CL; 56-95
+Add; WSH; 71-10
+Add; WSH; 77-16
+Add; DC; 84-10
+Add; JWH; 103-12
+Add; SRAC; 69-39
+Add; CV2; 103-26
+Add; CV2; 102-42
+Add; CVA; 111-11
+Add; CVB; 112-22
+Add; CVB; 116-15
+Add; CVB; 116-32
+Add; CVC; 111-36
+Add; EC; 69-52
+Add; HB; 97-45
+Add; HB; 102-55
+Add; CP; 106-55
+Add; MUS; 68-68
+Add; MUS; 77-79
+Add; CH; 76-62
+Add; ART; 96-69
+Add; ART; 89-62
+Add; ART; 102-67
+Add; BBC; 108-65
+Add; BT; 112-78
+Add; SU; 64-86
+Add; SU; 76-83
+Add; SU; 82-83
+Add; SU; 86-81
+Add; SU; 82-94
+Add; SU; 89-79
+Add; SU; 98-97
+Add; ASP; 98-97
+Add; BK; 98-97
 Add; ATM; 102-94
-Add; Engineering Building; 66-118
-Add; Engineering Building; 66-101
-Add; Engineering Building; 72-94
-Add; Engineering Building; 82-94
-Add; Engineering Building; 82-124
-Add; Industrial Studies; 98-97
-Add; Industrial Studies; 102-118
-Add; Corporation Yard A; 106-123
-Add; Corporation Yard A; 106-115
-Add; Corporation Yard B; 106-110
-Add; Washington Square Hall; Science Building
-Add; Spartan Complex Central; Spartan Complex East
-Add; Dudley Moorhead Hall; Instructional Resource Center
-Add; Career Center; Administration
-Add; Diaz Compean Student Union; AS Print Shop
-Add; Diaz Compean Student Union; Bookstore
+Add; ENG; 66-118
+Add; ENG; 66-101
+Add; ENG; 72-94
+Add; ENG; 82-94
+Add; ENG; 82-124
+Add; IS; 98-97
+Add; IS; 102-118
+Add; CYA; 106-123
+Add; CYA; 106-115
+Add; CYB; 106-110
+Add; WSQ; SCI
+Add; SPXC; SPXE
+Add; DMH; IRC
+Add; CAR; ADM
+Add; SU; ASP
+Add; SU; BK
